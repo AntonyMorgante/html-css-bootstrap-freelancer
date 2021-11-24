@@ -1,0 +1,27 @@
+.ms-hoverable{
+    position: relative;
+}
+
+.ms-hidden{
+    display: none;
+    background-color: rgba(0,0,0,0.3);
+    width:calc(100% - 24px);
+    height:calc(100% - 16px);
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+
+.ms-play{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    font-size:50px;
+    filter:invert(1);
+}
+
+.ms-hoverable:hover .ms-hidden{
+    display: inline-block;
+}
